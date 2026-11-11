@@ -8,8 +8,10 @@ type Props = {
   data: ActionCardData
   checked: boolean
   onCheckedChange: (on: boolean) => void
-  /** 왼쪽 영역 또는 전송 버튼 → 페이지 이동 */
+  /** 왼쪽 영역(과 onCta가 없을 때 전송 버튼) → 페이지 이동 */
   onOpen: (data: ActionCardData) => void
+  /** 오른쪽 아래 버튼(발주시스템으로 전송 등)을 페이지 이동 대신 이 자리에서 처리 */
+  onCta?: (data: ActionCardData) => void
   onComplete: (data: ActionCardData) => void
   onUndo: (data: ActionCardData) => void
   /** 초안 전체보기 (리뷰 카드) */
@@ -17,7 +19,7 @@ type Props = {
 }
 
 /** 액션 제안 페이지의 가로형 카드 — 왼쪽 요약 | 오른쪽 근거·초안 + 우측 완료하기 칸 */
-export default function ActionCardWide({ data, checked, onCheckedChange, onOpen, onComplete, onUndo, onViewDraft }: Props) {
+export default function ActionCardWide({ data, checked, onCheckedChange, onOpen, onCta, onComplete, onUndo, onViewDraft }: Props) {
   const box = data.done ? 'bg-gray-200' : 'bg-gray-100'
   // 왼쪽 표: 발주는 재고 행, 리뷰는 플랫폼별 건수
   const leftRows = data.rows ?? data.platforms?.map((p) => ({ label: p.name, value: p.value, done: p.done })) ?? []
@@ -31,7 +33,10 @@ export default function ActionCardWide({ data, checked, onCheckedChange, onOpen,
         }`}
       >
         {/* 왼쪽: 홈 카드와 같은 요약 — 이 영역만 눌러서 이동 */}
-        <div onClick={() => onOpen(data)} className="card-link flex w-[432px] shrink-0 cursor-pointer flex-col pb-[17px] pl-6 pr-[33px] pt-4">
+        <div
+          onClick={() => onOpen(data)}
+          className="card-link flex w-[432px] shrink-0 cursor-pointer flex-col pb-[17px] pl-6 pr-[33px] pt-4"
+        >
           <ActionCardHeader data={data} checked={checked} onCheckedChange={onCheckedChange} />
           <div className="mt-[17px]">
             <ActionCardTitle data={data} subtitle={data.kind === 'order' ? `수량 ${data.subtitle}` : undefined} />
@@ -71,9 +76,10 @@ export default function ActionCardWide({ data, checked, onCheckedChange, onOpen,
               )}
               <Button
                 size="sm"
+                disabled={!!onCta && data.done}
                 onClick={(e) => {
                   stop(e)
-                  onOpen(data)
+                  ;(onCta ?? onOpen)(data)
                 }}
               >
                 {data.cta}
@@ -114,7 +120,11 @@ function SideButton({ data, onComplete, onUndo }: Pick<Props, 'data' | 'onComple
 
   if (!data.done) {
     return (
-      <button type="button" onClick={() => onComplete(data)} className={`${base} bg-gray-250 text-gray-600 hover:bg-gray-300 hover:text-gray-800`}>
+      <button
+        type="button"
+        onClick={() => onComplete(data)}
+        className={`${base} bg-gray-250 text-gray-600 hover:bg-gray-300 hover:text-gray-800`}
+      >
         완료하기
       </button>
     )

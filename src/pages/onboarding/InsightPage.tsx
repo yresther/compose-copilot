@@ -201,7 +201,15 @@ export default function InsightPage() {
     'absolute top-1/2 z-10 flex h-[29px] w-[29px] -translate-y-1/2 items-center justify-center rounded-full bg-gray-400 text-white shadow-float transition hover:bg-gray-500'
   return (
     <div className="pb-24 pl-[103px] pr-[45px] pt-[58px]">
-      <img src={logo} alt="COMPOSE COFFEE" className="w-[161px] brightness-0" />
+      {/* 로고를 누르면 로그인 화면으로 (온보딩 1~4단계와 같게) */}
+      <button
+        type="button"
+        onClick={() => navigate('/login')}
+        aria-label="로그인 화면으로"
+        className="block transition-opacity hover:opacity-70"
+      >
+        <img src={logo} alt="COMPOSE COFFEE" className="w-[161px] brightness-0" />
+      </button>
 
       <h1 className="mt-[44px] text-[26px] font-bold leading-[36px] text-gray-900">
         {s.titleTop}

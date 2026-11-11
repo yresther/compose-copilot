@@ -67,7 +67,7 @@ export default function Step2Store() {
           {s.cta}
         </PrimaryButton>
       </div>
-      <PreOwnerLink className="mt-[37px]" />
+      <PreOwnerLink className="mt-[37px] translate-x-[4px]" />
     </div>
   )
 }

@@ -24,6 +24,13 @@ export default function ActionPage() {
 
   const open = (a: ActionCardData) => a.link && navigate(a.link)
 
+  // 발주 카드의 '발주시스템으로 전송' — 발주관리로 이동하지 않고 이 자리에서 전송 처리 → 완료(흐린 카드)로
+  const sendOrder = (a: ActionCardData) => {
+    if (a.done) return
+    complete([a.id])
+    toast.show(`발주 시스템으로 전송했어요. (${a.title.replace(/ 발주$/, '')} ${a.subtitle})`)
+  }
+
   return (
     <div className="pb-24">
       <PageHeader title="오늘의 할 일" basis />
@@ -51,6 +58,7 @@ export default function ActionPage() {
               checked={checked.has(a.id)}
               onCheckedChange={(on) => setChecked(a.id, on)}
               onOpen={open}
+              onCta={a.kind === 'order' ? sendOrder : undefined}
               onComplete={(d) => completeIds([d.id])}
               onUndo={(d) => {
                 undo(d.id)

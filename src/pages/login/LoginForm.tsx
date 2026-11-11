@@ -31,7 +31,7 @@ export default function LoginForm({ itemStyle }: { itemStyle: (i: number) => CSS
 
   return (
     <form onSubmit={submit} noValidate className="w-[398px]">
-      <div style={itemStyle(0)}>
+      <div style={itemStyle(0)} className="text-center">
         <h1 className="text-[28px] font-bold leading-[40px] text-gray-900">{f.title}</h1>
         <p className="mt-[7px] text-[18px] leading-[27px] text-gray-600">{f.subtitle}</p>
       </div>

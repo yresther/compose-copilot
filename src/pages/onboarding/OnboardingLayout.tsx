@@ -1,4 +1,4 @@
-import { Check, ChevronLeft } from 'lucide-react'
+import { Check } from 'lucide-react'
 import type { ReactNode } from 'react'
 import { useNavigate } from 'react-router-dom'
 import watermark from '../../assets/illust/watermark.png'
@@ -66,24 +66,20 @@ export default function OnboardingLayout({ step, children }: Props) {
   return (
     <div className="flex min-h-screen bg-white">
       <aside className="fixed inset-y-0 left-0 z-20 w-[242px] bg-brown-900">
-        <img src={logo} alt="COMPOSE COFFEE" className="absolute left-[39px] top-[34px] w-[161px]" />
+        {/* 로고를 누르면 로그인 화면으로 (이전 단계는 왼쪽 단계 제목을 눌러 이동) */}
+        <button
+          type="button"
+          onClick={() => navigate('/login')}
+          aria-label="로그인 화면으로"
+          className="absolute left-[39px] top-[34px] transition-opacity hover:opacity-80"
+        >
+          <img src={logo} alt="COMPOSE COFFEE" className="w-[161px]" />
+        </button>
         <Stepper step={step} />
       </aside>
       {/* 오른쪽 아래 흐린 COMPOSE 워터마크 (에셋 자체가 반투명, 오른쪽 끝에서 잘린 모양) */}
       <img src={watermark} alt="" aria-hidden className="pointer-events-none fixed bottom-[76px] right-0 w-[636px]" />
-      <main className="relative ml-[242px] min-w-0 flex-1 pb-28">
-        {step > 1 && (
-          <button
-            type="button"
-            onClick={() => navigate(`/onboarding/${step - 1}`)}
-            className="absolute left-[155px] top-[96px] flex items-center gap-0.5 text-[14px] text-gray-500 hover:text-gray-900"
-          >
-            <ChevronLeft size={16} />
-            {data.prev}
-          </button>
-        )}
-        {children}
-      </main>
+      <main className="relative ml-[242px] min-w-0 flex-1 pb-28">{children}</main>
       {/* 로그인 · 회원가입의 건너뛰기와 같은 자리 — 1단계에서만 */}
       {step === 1 && <SkipButton label={data.skip} to="/dashboard" />}
     </div>
