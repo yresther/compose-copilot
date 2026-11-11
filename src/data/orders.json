@@ -1,0 +1,309 @@
+{
+  "urgent": {
+    "itemId": "red-bean",
+    "title": "지금 바로 팥 발주가 필요해요.",
+    "badge": "소진임박",
+    "stockLabel": "재고현황",
+    "stock": "약 1일치 남음"
+  },
+  "proposals": [
+    {
+      "id": "vanilla-syrup",
+      "actionId": "order-vanilla",
+      "name": "바닐라 시럽",
+      "spec": "700ml",
+      "unit": "병",
+      "image": "vanilla-syrup",
+      "category": "syrup",
+      "badge": {
+        "tone": "danger",
+        "text": "소진임박"
+      },
+      "chips": [
+        "프로모션 기간",
+        "판매량 +50%",
+        "재고 1일치 남음"
+      ],
+      "reason": "바닐라 크림라떼 프로모션으로 바닐라 시럽 사용 증가",
+      "aiQty": 4,
+      "price": 12000
+    },
+    {
+      "id": "red-bean",
+      "actionId": "order-redbean",
+      "name": "빙수 팥",
+      "spec": "5kg",
+      "unit": "봉",
+      "image": "red-bean",
+      "category": "ice",
+      "badge": {
+        "tone": "danger",
+        "text": "소진임박"
+      },
+      "chips": [
+        "주말 32° 이상",
+        "판매량 +47%",
+        "재고 소진임박"
+      ],
+      "reason": "컵빙수 일 평균 41잔 증가 · 2봉 발주 시 주말 포함 4.3일치 확보",
+      "aiQty": 2,
+      "price": 25000
+    },
+    {
+      "id": "choco-sauce",
+      "name": "초코 소스",
+      "spec": "100ml",
+      "unit": "개",
+      "category": "syrup",
+      "badge": {
+        "tone": "danger",
+        "text": "소진임박"
+      },
+      "chips": [
+        "재고 3일치 남음"
+      ],
+      "reason": "초코라떼, 모카프라페 주문 증가",
+      "aiQty": 2,
+      "price": 8000
+    }
+  ],
+  "catalog": [
+    {
+      "id": "choco-sauce",
+      "name": "컴포즈 초코소스",
+      "spec": "100ml",
+      "unit": "개",
+      "price": 8000,
+      "category": "syrup"
+    },
+    {
+      "id": "choco-powder",
+      "name": "컴포즈 초코파우더",
+      "spec": "1kg",
+      "unit": "봉",
+      "price": 15000,
+      "category": "syrup"
+    },
+    {
+      "id": "caramel-syrup",
+      "name": "컴포즈 카라멜 시럽",
+      "spec": "1L",
+      "unit": "병",
+      "price": 11000,
+      "category": "syrup"
+    },
+    {
+      "id": "hazelnut-syrup",
+      "name": "컴포즈 헤이즐넛 시럽",
+      "spec": "1L",
+      "unit": "병",
+      "price": 11000,
+      "category": "syrup"
+    },
+    {
+      "id": "lemon",
+      "name": "컴포즈 레몬청",
+      "spec": "1kg",
+      "unit": "병",
+      "price": 9000,
+      "category": "syrup"
+    },
+    {
+      "id": "milk",
+      "name": "서울우유 1L",
+      "spec": "1L",
+      "unit": "팩",
+      "price": 2800,
+      "category": "dairy"
+    },
+    {
+      "id": "whipping",
+      "name": "휘핑크림",
+      "spec": "1L",
+      "unit": "팩",
+      "price": 7500,
+      "category": "dairy"
+    },
+    {
+      "id": "beans",
+      "name": "컴포즈 원두 블렌드",
+      "spec": "1kg",
+      "unit": "봉",
+      "price": 18000,
+      "category": "beans"
+    },
+    {
+      "id": "red-bean",
+      "name": "빙수 팥",
+      "spec": "5kg",
+      "unit": "봉",
+      "price": 25000,
+      "category": "ice"
+    },
+    {
+      "id": "condensed-milk",
+      "name": "연유",
+      "spec": "1kg",
+      "unit": "개",
+      "price": 6500,
+      "category": "ice"
+    },
+    {
+      "id": "cold-brew",
+      "name": "컴포즈 콜드브루 원액",
+      "spec": "1L",
+      "unit": "병",
+      "price": 15000,
+      "category": "beans"
+    },
+    {
+      "id": "yuja",
+      "name": "컴포즈 유자청",
+      "spec": "1kg",
+      "unit": "병",
+      "price": 9000,
+      "category": "syrup"
+    }
+  ],
+  "categories": [
+    {
+      "value": "all",
+      "label": "전체 품목"
+    },
+    {
+      "value": "syrup",
+      "label": "시럽 · 소스"
+    },
+    {
+      "value": "dairy",
+      "label": "유제품"
+    },
+    {
+      "value": "beans",
+      "label": "원두"
+    },
+    {
+      "value": "ice",
+      "label": "빙수 재료"
+    }
+  ],
+  "history": {
+    "rows": [
+      {
+        "date": "{{date:-3}}",
+        "item": "빙수 팥",
+        "category": "ice",
+        "ai": "2봉",
+        "actual": "1봉",
+        "diff": "-1봉",
+        "result": "shortage",
+        "note": "여름 성수기 수요 급증"
+      },
+      {
+        "date": "{{date:-7}}",
+        "item": "레몬시럽",
+        "category": "syrup",
+        "ai": "2병",
+        "actual": "2병",
+        "diff": "-",
+        "result": "normal",
+        "note": ""
+      },
+      {
+        "date": "{{date:-10}}",
+        "item": "우유",
+        "category": "dairy",
+        "ai": "12팩",
+        "actual": "8팩",
+        "diff": "-4팩",
+        "result": "shortage",
+        "note": "{{date:-5}} 재발주 완료"
+      },
+      {
+        "date": "{{date:-14}}",
+        "item": "원두",
+        "category": "beans",
+        "ai": "5봉",
+        "actual": "5봉",
+        "diff": "-",
+        "result": "normal",
+        "note": ""
+      }
+    ],
+    "moreRows": [
+      {
+        "date": "{{date:-17}}",
+        "item": "바닐라 시럽",
+        "category": "syrup",
+        "ai": "3병",
+        "actual": "3병",
+        "diff": "-",
+        "result": "normal",
+        "note": ""
+      },
+      {
+        "date": "{{date:-19}}",
+        "item": "휘핑크림",
+        "category": "dairy",
+        "ai": "4팩",
+        "actual": "5팩",
+        "diff": "+1팩",
+        "result": "normal",
+        "note": "1팩 남음"
+      },
+      {
+        "date": "{{date:-21}}",
+        "item": "빙수 팥",
+        "category": "ice",
+        "ai": "1봉",
+        "actual": "1봉",
+        "diff": "-",
+        "result": "normal",
+        "note": ""
+      },
+      {
+        "date": "{{date:-24}}",
+        "item": "우유",
+        "category": "dairy",
+        "ai": "10팩",
+        "actual": "10팩",
+        "diff": "-",
+        "result": "normal",
+        "note": ""
+      },
+      {
+        "date": "{{date:-26}}",
+        "item": "초코 소스",
+        "category": "syrup",
+        "ai": "2개",
+        "actual": "2개",
+        "diff": "-",
+        "result": "normal",
+        "note": ""
+      },
+      {
+        "date": "{{date:-28}}",
+        "item": "원두",
+        "category": "beans",
+        "ai": "5봉",
+        "actual": "4봉",
+        "diff": "-1봉",
+        "result": "normal",
+        "note": "재고 여유분 사용"
+      }
+    ],
+    "summary": {
+      "quarter": {
+        "label": "최근 3개월 평균",
+        "value": "-14%",
+        "note": "재고부족 4회 발생"
+      },
+      "month": {
+        "label": "이번달",
+        "value": "-9%",
+        "note": "3개월 평균 대비 5% 개선"
+      }
+    },
+    "tip": "{{date:-3}} AI 제안보다 1봉 적게 한 빙수 팥 발주가 오늘 재고 부족의 직접 원인이에요."
+  }
+}

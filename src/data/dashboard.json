@@ -1,0 +1,117 @@
+{
+  "periods": [
+    {
+      "key": "today",
+      "label": "오늘"
+    },
+    {
+      "key": "yesterday",
+      "label": "어제"
+    },
+    {
+      "key": "lastWeek",
+      "label": "지난주"
+    },
+    {
+      "key": "lastMonth",
+      "label": "지난달"
+    }
+  ],
+  "modes": {
+    "live": {
+      "status": {
+        "label": "영업중",
+        "meta": "컴포즈커피 강남역점 · 30° 맑음"
+      },
+      "greeting": {
+        "text": "최윤서 점주님 환영해요",
+        "emoji": "🥳"
+      },
+      "alerts": 4,
+      "section": {
+        "title": "실시간 브리핑",
+        "refresh": true
+      },
+      "actionsTitle": "오늘의 할 일",
+      "actionsSub": "우선순위 순"
+    },
+    "closing": {
+      "status": {
+        "label": "영업종료",
+        "meta": "컴포즈커피 강남역점 · 25° 맑음"
+      },
+      "greeting": {
+        "text": "오늘 하루도 고생 많으셨어요",
+        "emoji": "🥰"
+      },
+      "alerts": 0,
+      "section": {
+        "title": "오늘의 마감 실적",
+        "basis": "22:00 마감 기준",
+        "refresh": false
+      },
+      "actionsTitle": "오늘의 액션 처리 현황",
+      "actionsSub": "2 / 3 건 완료",
+      "actionOverrides": [
+        {
+          "id": "review-negative",
+          "badge": {
+            "tone": "danger",
+            "text": "미확인 리뷰 1건"
+          },
+          "platforms": [
+            {
+              "name": "배달의 민족",
+              "value": "답변 완료",
+              "done": true
+            },
+            {
+              "name": "쿠팡이츠",
+              "value": "부정리뷰 1건"
+            }
+          ]
+        },
+        {
+          "id": "order-vanilla",
+          "done": true,
+          "badge": {
+            "tone": "neutral",
+            "text": "14:30 전송 완료"
+          }
+        },
+        {
+          "id": "order-redbean",
+          "done": true,
+          "badge": {
+            "tone": "neutral",
+            "text": "14:30 전송 완료"
+          }
+        }
+      ]
+    }
+  },
+  "report": {
+    "store": "컴포즈커피 강남역점",
+    "date": "{{today}}",
+    "total": "817,300원",
+    "autoTime": "22:00",
+    "channels": [
+      {
+        "id": "kakao",
+        "label": "카카오톡 알림톡으로 받기",
+        "value": "010-****-4696",
+        "checked": true
+      },
+      {
+        "id": "email",
+        "label": "이메일로 받기",
+        "value": "yr*****@compose.co.kr",
+        "checked": false
+      }
+    ]
+  },
+  "emptyActions": {
+    "title": "아직 오늘의 할 일이 없어요",
+    "desc": "AI가 매출 · 재고 · 리뷰를 계속 살펴보고 있어요.\n챙겨야 할 일이 생기면 여기에 바로 알려드릴게요."
+  }
+}

@@ -1,0 +1,676 @@
+{
+  "periods": {
+    "today": {
+      "trend": {
+        "unit": "hour",
+        "labels": [
+          "6시",
+          "7시",
+          "8시",
+          "9시",
+          "10시",
+          "11시",
+          "지금"
+        ],
+        "current": [
+          14500,
+          16400,
+          138200,
+          283600,
+          452700,
+          552700,
+          795900
+        ],
+        "previous": [
+          12700,
+          14500,
+          120000,
+          250900,
+          368700,
+          567300,
+          678000
+        ],
+        "legend": {
+          "current": "이번주",
+          "previous": "지난주"
+        },
+        "compare": "지난주 보다"
+      },
+      "breakdowns": {
+        "channel": [
+          {
+            "name": "테이크아웃",
+            "count": 73,
+            "avg": 5519,
+            "diff": 540,
+            "revenue": 402866
+          },
+          {
+            "name": "홀",
+            "count": 51,
+            "avg": 6034,
+            "diff": 565,
+            "revenue": 307734
+          },
+          {
+            "name": "배달",
+            "count": 20,
+            "avg": 4265,
+            "diff": -14,
+            "revenue": 85300
+          }
+        ],
+        "time": [
+          {
+            "name": "오전 (7~11시)",
+            "count": 43,
+            "avg": 5086,
+            "diff": 471
+          },
+          {
+            "name": "점심 (11~14시)",
+            "count": 55,
+            "avg": 5859,
+            "diff": 543
+          },
+          {
+            "name": "오후 (14~17시)",
+            "count": 26,
+            "avg": 5638,
+            "diff": 522
+          },
+          {
+            "name": "저녁 (17~22시)",
+            "count": 20,
+            "avg": 5418,
+            "diff": 502
+          }
+        ],
+        "payment": [
+          {
+            "name": "카드",
+            "count": 98,
+            "avg": 5692,
+            "diff": 525
+          },
+          {
+            "name": "간편결제",
+            "count": 39,
+            "avg": 5250,
+            "diff": 484
+          },
+          {
+            "name": "현금",
+            "count": 7,
+            "avg": 4753,
+            "diff": 439
+          }
+        ]
+      },
+      "breakdownDiffLabel": "전일 대비",
+      "ranking": [
+        {
+          "name": "아메리카노 ICE",
+          "qty": 132,
+          "revenue": 198000
+        },
+        {
+          "name": "바닐라라떼 ICE",
+          "qty": 42,
+          "revenue": 126000
+        },
+        {
+          "name": "카페라떼 ICE",
+          "qty": 35,
+          "revenue": 87500
+        },
+        {
+          "name": "더블초코라떼 ICE",
+          "qty": 21,
+          "revenue": 63000
+        },
+        {
+          "name": "레몬에이드",
+          "qty": 13,
+          "revenue": 45500
+        },
+        {
+          "name": "카라멜마키아토 ICE",
+          "qty": 12,
+          "revenue": 36000
+        },
+        {
+          "name": "콜드브루",
+          "qty": 14,
+          "revenue": 35000
+        },
+        {
+          "name": "아이스티",
+          "qty": 16,
+          "revenue": 32000
+        },
+        {
+          "name": "카페모카 ICE",
+          "qty": 9,
+          "revenue": 27000
+        },
+        {
+          "name": "딸기라떼",
+          "qty": 7,
+          "revenue": 24500
+        }
+      ]
+    },
+    "yesterday": {
+      "trend": {
+        "unit": "hour",
+        "labels": [
+          "7시",
+          "9시",
+          "11시",
+          "13시",
+          "15시",
+          "17시",
+          "19시",
+          "22시"
+        ],
+        "current": [
+          16400,
+          232700,
+          418200,
+          520000,
+          581800,
+          640000,
+          690900,
+          727300
+        ],
+        "previous": [
+          14500,
+          210900,
+          385500,
+          487300,
+          545500,
+          603600,
+          650900,
+          686200
+        ],
+        "legend": {
+          "current": "어제",
+          "previous": "지난주"
+        },
+        "compare": "지난주 같은 요일보다"
+      },
+      "breakdowns": {
+        "channel": [
+          {
+            "name": "테이크아웃",
+            "count": 74,
+            "avg": 4983,
+            "diff": 38,
+            "revenue": 368726
+          },
+          {
+            "name": "홀",
+            "count": 46,
+            "avg": 5469,
+            "diff": 52,
+            "revenue": 251574
+          },
+          {
+            "name": "배달",
+            "count": 25,
+            "avg": 4279,
+            "diff": 21,
+            "revenue": 107000
+          }
+        ],
+        "time": [
+          {
+            "name": "오전 (7~11시)",
+            "count": 44,
+            "avg": 4618,
+            "diff": -24
+          },
+          {
+            "name": "점심 (11~14시)",
+            "count": 55,
+            "avg": 5320,
+            "diff": 57
+          },
+          {
+            "name": "오후 (14~17시)",
+            "count": 26,
+            "avg": 5120,
+            "diff": 12
+          },
+          {
+            "name": "저녁 (17~22시)",
+            "count": 20,
+            "avg": 4919,
+            "diff": -9
+          }
+        ],
+        "payment": [
+          {
+            "name": "카드",
+            "count": 99,
+            "avg": 5165,
+            "diff": -24
+          },
+          {
+            "name": "간편결제",
+            "count": 39,
+            "avg": 4764,
+            "diff": 57
+          },
+          {
+            "name": "현금",
+            "count": 7,
+            "avg": 4312,
+            "diff": 12
+          }
+        ]
+      },
+      "breakdownDiffLabel": "전일 대비",
+      "ranking": [
+        {
+          "name": "아메리카노 ICE",
+          "qty": 124,
+          "revenue": 186000
+        },
+        {
+          "name": "바닐라라떼 ICE",
+          "qty": 36,
+          "revenue": 108000
+        },
+        {
+          "name": "카페라떼 ICE",
+          "qty": 33,
+          "revenue": 82500
+        },
+        {
+          "name": "더블초코라떼 ICE",
+          "qty": 19,
+          "revenue": 57000
+        },
+        {
+          "name": "레몬에이드",
+          "qty": 15,
+          "revenue": 52500
+        },
+        {
+          "name": "카라멜마키아토 ICE",
+          "qty": 11,
+          "revenue": 33000
+        },
+        {
+          "name": "콜드브루",
+          "qty": 13,
+          "revenue": 32500
+        },
+        {
+          "name": "아이스티",
+          "qty": 15,
+          "revenue": 30000
+        },
+        {
+          "name": "카페모카 ICE",
+          "qty": 8,
+          "revenue": 24000
+        },
+        {
+          "name": "딸기라떼",
+          "qty": 6,
+          "revenue": 21000
+        }
+      ]
+    },
+    "lastWeek": {
+      "trend": {
+        "unit": "day",
+        "labels": [
+          "월",
+          "화",
+          "수",
+          "목",
+          "금",
+          "토",
+          "일"
+        ],
+        "current": [
+          720000,
+          1461800,
+          2200000,
+          2941800,
+          3789100,
+          4712700,
+          5522600
+        ],
+        "previous": [
+          690900,
+          1400000,
+          2105500,
+          2807300,
+          3610900,
+          4483600,
+          5259600
+        ],
+        "legend": {
+          "current": "지난주",
+          "previous": "지지난주"
+        },
+        "compare": "지지난주 보다"
+      },
+      "breakdowns": {
+        "channel": [
+          {
+            "name": "테이크아웃",
+            "count": 517,
+            "avg": 5450,
+            "diff": 62,
+            "revenue": 2817900
+          },
+          {
+            "name": "홀",
+            "count": 350,
+            "avg": 5918,
+            "diff": 85,
+            "revenue": 2071300
+          },
+          {
+            "name": "배달",
+            "count": 148,
+            "avg": 4280,
+            "diff": -40,
+            "revenue": 633400
+          }
+        ],
+        "time": [
+          {
+            "name": "오전 (7~11시)",
+            "count": 304,
+            "avg": 5008,
+            "diff": 38
+          },
+          {
+            "name": "점심 (11~14시)",
+            "count": 386,
+            "avg": 5769,
+            "diff": -24
+          },
+          {
+            "name": "오후 (14~17시)",
+            "count": 183,
+            "avg": 5552,
+            "diff": 57
+          },
+          {
+            "name": "저녁 (17~22시)",
+            "count": 142,
+            "avg": 5334,
+            "diff": 12
+          }
+        ],
+        "payment": [
+          {
+            "name": "카드",
+            "count": 690,
+            "avg": 5605,
+            "diff": 38
+          },
+          {
+            "name": "간편결제",
+            "count": 274,
+            "avg": 5169,
+            "diff": -24
+          },
+          {
+            "name": "현금",
+            "count": 51,
+            "avg": 4680,
+            "diff": 57
+          }
+        ]
+      },
+      "breakdownDiffLabel": "전주 대비",
+      "ranking": [
+        {
+          "name": "아메리카노 ICE",
+          "qty": 902,
+          "revenue": 1353000
+        },
+        {
+          "name": "바닐라라떼 ICE",
+          "qty": 276,
+          "revenue": 828000
+        },
+        {
+          "name": "카페라떼 ICE",
+          "qty": 236,
+          "revenue": 590000
+        },
+        {
+          "name": "더블초코라떼 ICE",
+          "qty": 144,
+          "revenue": 432000
+        },
+        {
+          "name": "레몬에이드",
+          "qty": 98,
+          "revenue": 343000
+        },
+        {
+          "name": "카라멜마키아토 ICE",
+          "qty": 85,
+          "revenue": 255000
+        },
+        {
+          "name": "콜드브루",
+          "qty": 95,
+          "revenue": 237500
+        },
+        {
+          "name": "아이스티",
+          "qty": 111,
+          "revenue": 222000
+        },
+        {
+          "name": "카페모카 ICE",
+          "qty": 63,
+          "revenue": 189000
+        },
+        {
+          "name": "딸기라떼",
+          "qty": 45,
+          "revenue": 157500
+        }
+      ]
+    },
+    "lastMonth": {
+      "trend": {
+        "unit": "week",
+        "labels": [
+          "1주",
+          "2주",
+          "3주",
+          "4주"
+        ],
+        "current": [
+          5672700,
+          11781800,
+          18145500,
+          24800000
+        ],
+        "previous": [
+          5527300,
+          11381800,
+          17490900,
+          23846200
+        ],
+        "legend": {
+          "current": "지난달",
+          "previous": "지지난달"
+        },
+        "compare": "지지난달 보다"
+      },
+      "breakdowns": {
+        "channel": [
+          {
+            "name": "테이크아웃",
+            "count": 2309,
+            "avg": 5480,
+            "diff": 45,
+            "revenue": 12654412
+          },
+          {
+            "name": "홀",
+            "count": 1593,
+            "avg": 5916,
+            "diff": 71,
+            "revenue": 9424188
+          },
+          {
+            "name": "배달",
+            "count": 636,
+            "avg": 4279,
+            "diff": -22,
+            "revenue": 2721400
+          }
+        ],
+        "time": [
+          {
+            "name": "오전 (7~11시)",
+            "count": 1361,
+            "avg": 5030,
+            "diff": -24
+          },
+          {
+            "name": "점심 (11~14시)",
+            "count": 1724,
+            "avg": 5795,
+            "diff": 57
+          },
+          {
+            "name": "오후 (14~17시)",
+            "count": 817,
+            "avg": 5576,
+            "diff": 12
+          },
+          {
+            "name": "저녁 (17~22시)",
+            "count": 636,
+            "avg": 5358,
+            "diff": -9
+          }
+        ],
+        "payment": [
+          {
+            "name": "카드",
+            "count": 3086,
+            "avg": 5629,
+            "diff": -24
+          },
+          {
+            "name": "간편결제",
+            "count": 1225,
+            "avg": 5192,
+            "diff": 57
+          },
+          {
+            "name": "현금",
+            "count": 227,
+            "avg": 4700,
+            "diff": 12
+          }
+        ]
+      },
+      "breakdownDiffLabel": "전월 대비",
+      "ranking": [
+        {
+          "name": "아메리카노 ICE",
+          "qty": 4018,
+          "revenue": 6027000
+        },
+        {
+          "name": "바닐라라떼 ICE",
+          "qty": 1200,
+          "revenue": 3600000
+        },
+        {
+          "name": "카페라떼 ICE",
+          "qty": 1084,
+          "revenue": 2710000
+        },
+        {
+          "name": "더블초코라떼 ICE",
+          "qty": 662,
+          "revenue": 1986000
+        },
+        {
+          "name": "레몬에이드",
+          "qty": 418,
+          "revenue": 1463000
+        },
+        {
+          "name": "카라멜마키아토 ICE",
+          "qty": 383,
+          "revenue": 1149000
+        },
+        {
+          "name": "콜드브루",
+          "qty": 428,
+          "revenue": 1070000
+        },
+        {
+          "name": "아이스티",
+          "qty": 496,
+          "revenue": 992000
+        },
+        {
+          "name": "카페모카 ICE",
+          "qty": 282,
+          "revenue": 846000
+        },
+        {
+          "name": "딸기라떼",
+          "qty": 203,
+          "revenue": 710500
+        }
+      ]
+    }
+  },
+  "brand": {
+    "title": "컴포즈커피 평균",
+    "description": "타 가맹점 대비 우리매장은 어느정도일까? 확인해보세요.",
+    "stores": 42,
+    "items": [
+      {
+        "key": "sales",
+        "icon": "money",
+        "label": "총 매출",
+        "ours": 795900,
+        "brand": 778200,
+        "unit": "원",
+        "rankTop": 38
+      },
+      {
+        "key": "visitors",
+        "icon": "people",
+        "label": "방문객",
+        "ours": 144,
+        "brand": 143,
+        "unit": "명",
+        "rankTop": 40
+      },
+      {
+        "key": "avg",
+        "icon": "coin",
+        "label": "객단가",
+        "ours": 5527,
+        "brand": 5440,
+        "unit": "원",
+        "rankTop": 44
+      }
+    ]
+  }
+}

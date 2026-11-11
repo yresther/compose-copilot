@@ -1,0 +1,363 @@
+{
+  "ranges": {
+    "6m": {
+      "label": "최근 6개월",
+      "months": 6,
+      "baseline": 800000,
+      "insights": [
+        {
+          "icon": "thermometer",
+          "title": "기온 30° 이상",
+          "label": "평균 매출",
+          "value": 22.4,
+          "note": "빙수 · 에이드 판매 급증하며 매출 상방 효과 가장 큼",
+          "warn": false
+        },
+        {
+          "icon": "rain",
+          "title": "비 오는 날",
+          "label": "평균 매출",
+          "value": -28.9,
+          "note": "배달 비중이 낮아 타격 큼. 배달 채널 강화 필요",
+          "warn": true
+        },
+        {
+          "icon": "promo",
+          "title": "본사 프로모션",
+          "label": "당일 매출 +34.1% 상승, 다음날",
+          "value": -10,
+          "note": "재료 과발주 주의",
+          "warn": true
+        }
+      ],
+      "weather": [
+        {
+          "key": "hot",
+          "label": "맑음 30° 이상",
+          "avg": 979000,
+          "diff": 22.4,
+          "days": 24
+        },
+        {
+          "key": "mild",
+          "label": "맑음 18°~29°",
+          "avg": 835000,
+          "diff": 4.4,
+          "days": 96
+        },
+        {
+          "key": "rain",
+          "label": "흐림 / 비",
+          "avg": 569000,
+          "diff": -28.9,
+          "days": 38
+        }
+      ],
+      "special": [
+        {
+          "key": "promo",
+          "label": "프로모션 당일",
+          "avg": 1073000,
+          "diff": 34.1,
+          "days": 9
+        },
+        {
+          "key": "fri",
+          "label": "금요일",
+          "avg": 890000,
+          "diff": 11.3,
+          "days": 26
+        },
+        {
+          "key": "holiday",
+          "label": "공휴일 (월~금)",
+          "avg": 470000,
+          "diff": -41.2,
+          "days": 7
+        }
+      ],
+      "nextDay": -10,
+      "rainDelivery": 12,
+      "areaDelivery": 21,
+      "area": [
+        {
+          "label": "평균 대비 일 매출",
+          "value": 6.2,
+          "note": "강남구 상위"
+        },
+        {
+          "label": "맑은 날 매출 격차",
+          "value": 9.1,
+          "note": "날씨 좋을 때 더 강함"
+        },
+        {
+          "label": "비 오는 날 매출 격차",
+          "value": -14.3,
+          "note": "배달 비중 낮아 타격 큼"
+        },
+        {
+          "label": "프로모션 반응률",
+          "value": 34.1,
+          "note": "구 내 평균 +29%"
+        }
+      ]
+    },
+    "3m": {
+      "label": "최근 3개월",
+      "months": 3,
+      "baseline": 811000,
+      "insights": [
+        {
+          "icon": "thermometer",
+          "title": "기온 30° 이상",
+          "label": "평균 매출",
+          "value": 24.8,
+          "note": "빙수 · 에이드 판매 급증하며 매출 상방 효과 가장 큼",
+          "warn": false
+        },
+        {
+          "icon": "rain",
+          "title": "비 오는 날",
+          "label": "평균 매출",
+          "value": -26.5,
+          "note": "배달 비중이 낮아 타격 큼. 배달 채널 강화 필요",
+          "warn": true
+        },
+        {
+          "icon": "promo",
+          "title": "본사 프로모션",
+          "label": "당일 매출 +36% 상승, 다음날",
+          "value": -9,
+          "note": "재료 과발주 주의",
+          "warn": true
+        }
+      ],
+      "weather": [
+        {
+          "key": "hot",
+          "label": "맑음 30° 이상",
+          "avg": 1012000,
+          "diff": 24.8,
+          "days": 30
+        },
+        {
+          "key": "mild",
+          "label": "맑음 18°~29°",
+          "avg": 852000,
+          "diff": 5.1,
+          "days": 40
+        },
+        {
+          "key": "rain",
+          "label": "흐림 / 비",
+          "avg": 596000,
+          "diff": -26.5,
+          "days": 16
+        }
+      ],
+      "special": [
+        {
+          "key": "promo",
+          "label": "프로모션 당일",
+          "avg": 1103000,
+          "diff": 36,
+          "days": 5
+        },
+        {
+          "key": "fri",
+          "label": "금요일",
+          "avg": 908000,
+          "diff": 12,
+          "days": 13
+        },
+        {
+          "key": "holiday",
+          "label": "공휴일 (월~금)",
+          "avg": 500000,
+          "diff": -38.4,
+          "days": 4
+        }
+      ],
+      "nextDay": -9,
+      "rainDelivery": 13,
+      "areaDelivery": 21,
+      "area": [
+        {
+          "label": "평균 대비 일 매출",
+          "value": 6.8,
+          "note": "강남구 상위"
+        },
+        {
+          "label": "맑은 날 매출 격차",
+          "value": 10.2,
+          "note": "날씨 좋을 때 더 강함"
+        },
+        {
+          "label": "비 오는 날 매출 격차",
+          "value": -12.9,
+          "note": "배달 비중 낮아 타격 큼"
+        },
+        {
+          "label": "프로모션 반응률",
+          "value": 36,
+          "note": "구 내 평균 +30%"
+        }
+      ]
+    },
+    "1m": {
+      "label": "최근 1개월",
+      "months": 1,
+      "baseline": 825000,
+      "insights": [
+        {
+          "icon": "thermometer",
+          "title": "기온 30° 이상",
+          "label": "평균 매출",
+          "value": 19.6,
+          "note": "빙수 · 에이드 판매 급증하며 매출 상방 효과 가장 큼",
+          "warn": false
+        },
+        {
+          "icon": "rain",
+          "title": "비 오는 날",
+          "label": "평균 매출",
+          "value": -31.2,
+          "note": "배달 비중이 낮아 타격 큼. 배달 채널 강화 필요",
+          "warn": true
+        },
+        {
+          "icon": "promo",
+          "title": "본사 프로모션",
+          "label": "당일 매출 +32.5% 상승, 다음날",
+          "value": -11,
+          "note": "재료 과발주 주의",
+          "warn": true
+        }
+      ],
+      "weather": [
+        {
+          "key": "hot",
+          "label": "맑음 30° 이상",
+          "avg": 987000,
+          "diff": 19.6,
+          "days": 2
+        },
+        {
+          "key": "mild",
+          "label": "맑음 18°~29°",
+          "avg": 856000,
+          "diff": 3.8,
+          "days": 17
+        },
+        {
+          "key": "rain",
+          "label": "흐림 / 비",
+          "avg": 568000,
+          "diff": -31.2,
+          "days": 6
+        }
+      ],
+      "special": [
+        {
+          "key": "promo",
+          "label": "프로모션 당일",
+          "avg": 1093000,
+          "diff": 32.5,
+          "days": 2
+        },
+        {
+          "key": "fri",
+          "label": "금요일",
+          "avg": 911000,
+          "diff": 10.4,
+          "days": 4
+        },
+        {
+          "key": "holiday",
+          "label": "공휴일 (월~금)",
+          "avg": 470000,
+          "diff": -43,
+          "days": 2
+        }
+      ],
+      "nextDay": -11,
+      "rainDelivery": 11,
+      "areaDelivery": 22,
+      "area": [
+        {
+          "label": "평균 대비 일 매출",
+          "value": 7.1,
+          "note": "강남구 상위"
+        },
+        {
+          "label": "맑은 날 매출 격차",
+          "value": 8.4,
+          "note": "날씨 좋을 때 더 강함"
+        },
+        {
+          "label": "비 오는 날 매출 격차",
+          "value": -16,
+          "note": "배달 비중 낮아 타격 큼"
+        },
+        {
+          "label": "프로모션 반응률",
+          "value": 32.5,
+          "note": "구 내 평균 +28%"
+        }
+      ]
+    }
+  },
+  "tips": {
+    "default": {
+      "headline": "비 오는 날 배달 비중을 늘리면 매출 하락을 줄일 수 있어요!",
+      "body": "현재 비 오는 날 배달 비중이 낮아 타격이 커요. 배달 앱 노출 강화 또는 우선 할인 프로모션을 고려해보세요.",
+      "image": "scooter"
+    },
+    "weather": {
+      "hot": {
+        "headline": "더운 날엔 빙수 · 에이드 재료를 미리 넉넉히 준비하세요!",
+        "body": "기온 30° 이상인 날 매출이 평균보다 {hot}% 높아요. 빙수 · 에이드 주문이 몰리기 때문이에요. 폭염 예보가 있으면 빙수팥 · 레몬청을 하루 전에 발주해보세요.",
+        "action": {
+          "label": "발주하러 가기",
+          "to": "/order"
+        },
+        "image": "cup"
+      },
+      "mild": {
+        "headline": "선선한 날은 평소 운영 그대로 충분해요",
+        "body": "맑고 선선한 날(18~29°) 매출은 평균보다 {mild}% 높아요. 큰 변동이 없는 날이에요. 평소 발주량과 인력 배치를 그대로 유지하면 돼요.",
+        "image": "star"
+      },
+      "rain": {
+        "headline": "비 오는 날 배달 비중을 늘리면 매출 하락을 줄일 수 있어요!",
+        "body": "비 오는 날 매출이 평균보다 {rain}% 낮아요. 배달 비중이 {rainDelivery}%로 같은 상권 평균({areaDelivery}%)보다 낮아 타격이 커요. 배달 앱 노출 강화 또는 우천 할인 프로모션을 고려해보세요.",
+        "image": "scooter"
+      }
+    },
+    "special": {
+      "promo": {
+        "headline": "프로모션 다음날은 재료 발주를 줄여주세요!",
+        "body": "본사 프로모션 당일 매출은 평균보다 {promo}% 높지만, 다음날은 {nextDay}% 줄어요. 당일 판매량에 맞춰 발주하면 재료가 남기 쉬워요. 다음날 발주 수량을 미리 조정해보세요.",
+        "action": {
+          "label": "발주 수량 확인하기",
+          "to": "/order"
+        },
+        "image": "docEdit"
+      },
+      "fri": {
+        "headline": "금요일 점심엔 인력을 한 명 더 배치해보세요",
+        "body": "금요일 매출은 평균보다 {fri}% 높아요. 점심 피크(12:00~13:30)에 주문이 몰려 대기시간이 길어지기 쉬워요. 금요일 점심에 1명을 더 배치하면 주문을 놓치지 않을 수 있어요.",
+        "image": "character"
+      },
+      "holiday": {
+        "headline": "평일 공휴일 전날엔 발주를 줄여두세요",
+        "body": "평일 공휴일 매출은 평균보다 {holiday}% 낮아요. 오피스 상권이라 출근 인구가 줄기 때문이에요. 공휴일 전날 우유 · 원두 발주량을 줄여 재고 손실을 막아보세요.",
+        "action": {
+          "label": "발주하러 가기",
+          "to": "/order"
+        },
+        "image": "docSearch"
+      }
+    }
+  }
+}

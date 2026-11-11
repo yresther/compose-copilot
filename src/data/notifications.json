@@ -1,0 +1,98 @@
+{
+  "_note": "알림 목록. {days}·{amount} 같은 자리표시자는 화면에서 실제 데모 데이터로 채운다. actionId가 완료되면 '처리 완료'로 바뀐다",
+  "items": [
+    {
+      "id": "stock-red-bean",
+      "kind": "stock",
+      "label": "재고",
+      "title": "빙수 팥이 {days}일 뒤면 떨어져요",
+      "body": "오늘 발주해야 빙수 판매에 차질이 없어요. AI 추천 수량이 준비돼 있어요.",
+      "minutesAgo": 12,
+      "cta": {
+        "label": "발주하러 가기",
+        "to": "/order?item=red-bean"
+      },
+      "actionId": "order-redbean",
+      "unread": true
+    },
+    {
+      "id": "review-negative",
+      "kind": "review",
+      "label": "리뷰",
+      "title": "답글이 필요한 부정리뷰가 {count}건 있어요",
+      "body": "배달의민족 · 쿠팡이츠에 포장 관련 아쉬운 리뷰가 올라왔어요. AI 답글 초안을 준비해뒀어요.",
+      "minutesAgo": 38,
+      "cta": {
+        "label": "답글 달기",
+        "to": "/review?review=c1"
+      },
+      "actionId": "review-negative",
+      "unread": true
+    },
+    {
+      "id": "expense-due",
+      "kind": "expense",
+      "label": "지출",
+      "title": "{names} 납부일이 {days}일 남았어요",
+      "body": "매달 {payDay}에 {amount}이 나가요. 통장 잔액을 미리 확인해두세요.",
+      "minutesAgo": 95,
+      "cta": {
+        "label": "지출 확인하기",
+        "to": "/funding/expense"
+      },
+      "unread": true
+    },
+    {
+      "id": "funding-deadline",
+      "kind": "funding",
+      "label": "정책자금",
+      "title": "소공인직접대출 신청 마감이 15일 남았어요",
+      "body": "최대 1억원, 연 2.0%로 지금 조건에 맞는 정책자금이에요. 마감 전에 확인해보세요.",
+      "minutesAgo": 180,
+      "cta": {
+        "label": "정책자금 보기",
+        "to": "/funding/policy"
+      },
+      "unread": true
+    },
+    {
+      "id": "report-sent",
+      "kind": "report",
+      "label": "리포트",
+      "title": "어제 마감 리포트를 카카오톡으로 보냈어요",
+      "body": "어제 총매출 817,300원 · 148건. 지난주 같은 요일보다 8% 많았어요.",
+      "minutesAgo": 900,
+      "cta": {
+        "label": "리포트 보기",
+        "to": "/sales/report"
+      },
+      "unread": false
+    },
+    {
+      "id": "rating-up",
+      "kind": "review",
+      "label": "리뷰",
+      "title": "이번 달 평균 평점이 4.6점으로 올랐어요",
+      "body": "\"친절해요\" 칭찬이 꾸준히 늘고 있어요. 리뷰 분석에서 자세히 볼 수 있어요.",
+      "minutesAgo": 1500,
+      "cta": {
+        "label": "리뷰 분석 보기",
+        "to": "/review"
+      },
+      "unread": false
+    },
+    {
+      "id": "order-arrived",
+      "kind": "stock",
+      "label": "발주",
+      "title": "원두 2봉이 입고됐어요",
+      "body": "지난 발주가 정상적으로 들어왔어요. 재고현황에 반영했어요.",
+      "minutesAgo": 2900,
+      "cta": {
+        "label": "재고 보기",
+        "to": "/inventory"
+      },
+      "unread": false
+    }
+  ]
+}

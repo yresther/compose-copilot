@@ -1,0 +1,123 @@
+{
+  "_note": "지출관리 원본. fixed는 온보딩 3단계(고정지출 등록), staff는 온보딩 4단계(운영인력)와 같은 출처로 쓴다",
+  "monthlySales": 24800000,
+  "materialRate": 0.32,
+  "fixed": [
+    {
+      "id": "loan",
+      "name": "대출이자",
+      "amount": 400000,
+      "payDay": 25,
+      "source": "account"
+    },
+    {
+      "id": "rent",
+      "name": "임대료",
+      "amount": 2500000,
+      "payDay": 25,
+      "source": "account"
+    },
+    {
+      "id": "royalty",
+      "name": "본사 로열티",
+      "amount": 720000,
+      "payDay": 10,
+      "source": "account"
+    },
+    {
+      "id": "telecom",
+      "name": "통신비",
+      "amount": 120000,
+      "payDay": 15,
+      "source": "manual"
+    }
+  ],
+  "sourceLabels": {
+    "account": "계좌 연동",
+    "manual": "직접 입력"
+  },
+  "staff": [
+    {
+      "id": "staff-1",
+      "role": "오픈",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": 7,
+      "end": 15,
+      "wage": 10320
+    },
+    {
+      "id": "staff-2",
+      "role": "미들",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": 11,
+      "end": 17,
+      "wage": 10320
+    },
+    {
+      "id": "staff-3",
+      "role": "마감",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "start": 15,
+      "end": 22,
+      "wage": 10320
+    },
+    {
+      "id": "staff-4",
+      "role": "주말",
+      "days": [
+        0,
+        6
+      ],
+      "start": 7,
+      "end": 15,
+      "wage": 10320
+    }
+  ],
+  "labor": {
+    "warnRate": 0.25,
+    "quietHours": [
+      14,
+      17
+    ],
+    "warnSub": "보통보다 조금 높아요",
+    "okSub": "적정 수준이에요"
+  },
+  "repair": {
+    "current": {
+      "amount": 300000,
+      "sub": "제빙기 수리로 이번달만 나가요"
+    },
+    "past": {
+      "amount": 80000,
+      "sub": "청소·소모품 비용이에요"
+    }
+  },
+  "pastMonths": 5,
+  "pastSalesFactor": [
+    0.98,
+    0.96,
+    1.01,
+    0.97,
+    0.94
+  ],
+  "fixedDesc": "매달 같은 날, 같은 금액이 나가는 돈이에요",
+  "variableDesc": "달 마다 금액이 달라지는 돈이에요"
+}

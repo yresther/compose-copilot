@@ -1,0 +1,503 @@
+{
+  "thresholds": {
+    "danger": 3,
+    "warn": 7
+  },
+  "categories": [
+    {
+      "key": "beans",
+      "label": "원두 · 콜드브루",
+      "items": [
+        {
+          "id": "beans",
+          "name": "원두 블렌드",
+          "stock": 12,
+          "unit": "봉",
+          "dailyUse": 1.5
+        },
+        {
+          "id": "decaf",
+          "name": "디카페인 원두",
+          "stock": 3,
+          "unit": "봉",
+          "dailyUse": 0.3
+        },
+        {
+          "id": "cold-brew",
+          "name": "콜드브루 원액",
+          "stock": 3,
+          "unit": "병",
+          "dailyUse": 1
+        },
+        {
+          "id": "single-origin",
+          "name": "싱글오리진 원두",
+          "stock": 4,
+          "unit": "봉",
+          "dailyUse": 0.4
+        },
+        {
+          "id": "espresso",
+          "name": "에스프레소 블렌드",
+          "stock": 6,
+          "unit": "봉",
+          "dailyUse": 0.5
+        }
+      ]
+    },
+    {
+      "key": "dairy",
+      "label": "유제품 · 크림",
+      "items": [
+        {
+          "id": "milk",
+          "name": "서울우유 1L",
+          "stock": 20,
+          "unit": "팩",
+          "dailyUse": 2.5
+        },
+        {
+          "id": "low-fat-milk",
+          "name": "저지방 우유",
+          "stock": 8,
+          "unit": "팩",
+          "dailyUse": 0.6
+        },
+        {
+          "id": "oat-milk",
+          "name": "오트밀크",
+          "stock": 6,
+          "unit": "팩",
+          "dailyUse": 0.4
+        },
+        {
+          "id": "whipping",
+          "name": "휘핑크림",
+          "stock": 9,
+          "unit": "팩",
+          "dailyUse": 0.8
+        },
+        {
+          "id": "cream-cheese",
+          "name": "크림치즈",
+          "stock": 4,
+          "unit": "개",
+          "dailyUse": 0.3
+        },
+        {
+          "id": "fresh-cream",
+          "name": "생크림",
+          "stock": 5,
+          "unit": "팩",
+          "dailyUse": 0.5
+        }
+      ]
+    },
+    {
+      "key": "syrup",
+      "label": "시럽 · 소스류",
+      "items": [
+        {
+          "id": "vanilla-syrup",
+          "name": "바닐라 시럽",
+          "stock": 1,
+          "unit": "병",
+          "dailyUse": 1
+        },
+        {
+          "id": "hazelnut-syrup",
+          "name": "헤이즐넛 시럽",
+          "stock": 2,
+          "unit": "병",
+          "dailyUse": 0.2
+        },
+        {
+          "id": "caramel-syrup",
+          "name": "카라멜 시럽",
+          "stock": 1,
+          "unit": "병",
+          "dailyUse": 0.2
+        },
+        {
+          "id": "caramel-drizzle",
+          "name": "카라멜 소스 (드리즐용)",
+          "stock": 2,
+          "unit": "병",
+          "dailyUse": 0.15
+        },
+        {
+          "id": "choco-sauce",
+          "name": "초코 소스",
+          "stock": 2,
+          "unit": "개",
+          "dailyUse": 0.6
+        },
+        {
+          "id": "brown-sugar",
+          "name": "흑당 시럽",
+          "stock": 2,
+          "unit": "병",
+          "dailyUse": 0.25
+        },
+        {
+          "id": "dalgona",
+          "name": "달고나 시럽",
+          "stock": 2,
+          "unit": "병",
+          "dailyUse": 0.1
+        },
+        {
+          "id": "sweet-potato",
+          "name": "고구마 시럽",
+          "stock": 1,
+          "unit": "병",
+          "dailyUse": 0.1
+        },
+        {
+          "id": "strawberry",
+          "name": "딸기 시럽",
+          "stock": 5,
+          "unit": "병",
+          "dailyUse": 0.3
+        },
+        {
+          "id": "matcha",
+          "name": "말차 시럽",
+          "stock": 2,
+          "unit": "병",
+          "dailyUse": 0.2
+        },
+        {
+          "id": "lemon-syrup",
+          "name": "레몬 시럽",
+          "stock": 3,
+          "unit": "병",
+          "dailyUse": 0.2
+        },
+        {
+          "id": "mint",
+          "name": "민트 시럽",
+          "stock": 2,
+          "unit": "병",
+          "dailyUse": 0.1
+        },
+        {
+          "id": "cinnamon",
+          "name": "시나몬 시럽",
+          "stock": 2,
+          "unit": "병",
+          "dailyUse": 0.1
+        },
+        {
+          "id": "irish",
+          "name": "아이리시크림 시럽",
+          "stock": 2,
+          "unit": "병",
+          "dailyUse": 0.15
+        },
+        {
+          "id": "white-choco",
+          "name": "화이트초코 소스",
+          "stock": 3,
+          "unit": "병",
+          "dailyUse": 0.2
+        },
+        {
+          "id": "maple",
+          "name": "메이플 시럽",
+          "stock": 2,
+          "unit": "병",
+          "dailyUse": 0.1
+        }
+      ]
+    },
+    {
+      "key": "ade",
+      "label": "에이드 · 청 · 티",
+      "items": [
+        {
+          "id": "lemon",
+          "name": "레몬청",
+          "stock": 3,
+          "unit": "병",
+          "dailyUse": 1
+        },
+        {
+          "id": "grapefruit",
+          "name": "자몽청",
+          "stock": 4,
+          "unit": "병",
+          "dailyUse": 0.4
+        },
+        {
+          "id": "yuja",
+          "name": "유자청",
+          "stock": 2,
+          "unit": "병",
+          "dailyUse": 0.4
+        },
+        {
+          "id": "green-grape",
+          "name": "청포도청",
+          "stock": 3,
+          "unit": "병",
+          "dailyUse": 0.3
+        },
+        {
+          "id": "earl-grey",
+          "name": "얼그레이 티백",
+          "stock": 4,
+          "unit": "박스",
+          "dailyUse": 0.3
+        },
+        {
+          "id": "chamomile",
+          "name": "캐모마일 티백",
+          "stock": 3,
+          "unit": "박스",
+          "dailyUse": 0.2
+        },
+        {
+          "id": "peppermint",
+          "name": "페퍼민트 티백",
+          "stock": 3,
+          "unit": "박스",
+          "dailyUse": 0.2
+        },
+        {
+          "id": "hibiscus",
+          "name": "히비스커스 티백",
+          "stock": 2,
+          "unit": "박스",
+          "dailyUse": 0.1
+        }
+      ]
+    },
+    {
+      "key": "powder",
+      "label": "파우더",
+      "items": [
+        {
+          "id": "choco-powder",
+          "name": "초코 파우더",
+          "stock": 3,
+          "unit": "봉",
+          "dailyUse": 0.3
+        },
+        {
+          "id": "greentea-powder",
+          "name": "녹차 파우더",
+          "stock": 2,
+          "unit": "봉",
+          "dailyUse": 0.2
+        },
+        {
+          "id": "cookie-powder",
+          "name": "쿠키앤크림 파우더",
+          "stock": 2,
+          "unit": "봉",
+          "dailyUse": 0.2
+        },
+        {
+          "id": "yogurt-powder",
+          "name": "요거트 파우더",
+          "stock": 3,
+          "unit": "봉",
+          "dailyUse": 0.3
+        },
+        {
+          "id": "vanilla-frappe",
+          "name": "바닐라 프라페 파우더",
+          "stock": 4,
+          "unit": "봉",
+          "dailyUse": 0.4
+        },
+        {
+          "id": "peach-tea",
+          "name": "복숭아 아이스티 파우더",
+          "stock": 6,
+          "unit": "봉",
+          "dailyUse": 0.5
+        },
+        {
+          "id": "sweet-potato-powder",
+          "name": "고구마 파우더",
+          "stock": 2,
+          "unit": "봉",
+          "dailyUse": 0.1
+        }
+      ]
+    },
+    {
+      "key": "icecream",
+      "label": "아이스크림 · 쉐이크",
+      "items": [
+        {
+          "id": "vanilla-icecream",
+          "name": "바닐라 아이스크림",
+          "stock": 4,
+          "unit": "통",
+          "dailyUse": 0.4
+        },
+        {
+          "id": "choco-icecream",
+          "name": "초코 아이스크림",
+          "stock": 3,
+          "unit": "통",
+          "dailyUse": 0.3
+        },
+        {
+          "id": "strawberry-icecream",
+          "name": "딸기 아이스크림",
+          "stock": 2,
+          "unit": "통",
+          "dailyUse": 0.2
+        },
+        {
+          "id": "softcone",
+          "name": "소프트콘 믹스",
+          "stock": 5,
+          "unit": "봉",
+          "dailyUse": 0.5
+        },
+        {
+          "id": "shake-base",
+          "name": "쉐이크 베이스",
+          "stock": 4,
+          "unit": "봉",
+          "dailyUse": 0.4
+        }
+      ]
+    },
+    {
+      "key": "bingsu",
+      "label": "빙수 시리즈",
+      "items": [
+        {
+          "id": "red-bean",
+          "name": "빙수 팥",
+          "stock": 1.1,
+          "unit": "kg",
+          "dailyUse": 1.1
+        },
+        {
+          "id": "injeolmi",
+          "name": "인절미 떡",
+          "stock": 6,
+          "unit": "팩",
+          "dailyUse": 0.6
+        },
+        {
+          "id": "soybean-powder",
+          "name": "콩고물",
+          "stock": 2,
+          "unit": "봉",
+          "dailyUse": 0.2
+        },
+        {
+          "id": "condensed-milk",
+          "name": "연유",
+          "stock": 3,
+          "unit": "개",
+          "dailyUse": 0.3
+        },
+        {
+          "id": "mango",
+          "name": "망고 토핑",
+          "stock": 3,
+          "unit": "팩",
+          "dailyUse": 0.3
+        }
+      ]
+    },
+    {
+      "key": "food",
+      "label": "푸드 · 디저트류",
+      "items": [
+        {
+          "id": "croffle",
+          "name": "크로플 생지",
+          "stock": 40,
+          "unit": "개",
+          "dailyUse": 4
+        },
+        {
+          "id": "salt-bread",
+          "name": "소금빵",
+          "stock": 24,
+          "unit": "개",
+          "dailyUse": 3
+        },
+        {
+          "id": "macaron",
+          "name": "마카롱",
+          "stock": 24,
+          "unit": "개",
+          "dailyUse": 2
+        },
+        {
+          "id": "cookie",
+          "name": "쿠키",
+          "stock": 30,
+          "unit": "개",
+          "dailyUse": 2
+        },
+        {
+          "id": "bagel",
+          "name": "베이글",
+          "stock": 12,
+          "unit": "개",
+          "dailyUse": 1.5
+        },
+        {
+          "id": "cheesecake",
+          "name": "치즈케이크",
+          "stock": 8,
+          "unit": "개",
+          "dailyUse": 0.8
+        }
+      ]
+    },
+    {
+      "key": "packaging",
+      "label": "포장재 · 소모품",
+      "items": [
+        {
+          "id": "ice-cup",
+          "name": "아이스컵 16oz",
+          "stock": 1200,
+          "unit": "개",
+          "dailyUse": 150
+        },
+        {
+          "id": "cup-holder",
+          "name": "컵홀더",
+          "stock": 800,
+          "unit": "개",
+          "dailyUse": 80
+        },
+        {
+          "id": "straw",
+          "name": "빨대",
+          "stock": 2000,
+          "unit": "개",
+          "dailyUse": 150
+        },
+        {
+          "id": "carrier",
+          "name": "캐리어",
+          "stock": 300,
+          "unit": "개",
+          "dailyUse": 30
+        },
+        {
+          "id": "delivery-bag",
+          "name": "배달 봉투",
+          "stock": 200,
+          "unit": "개",
+          "dailyUse": 25
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "_note": "인트로(login 00~03) + 로그인(login 04). 실제 인증 없이 값만 있으면 통과",
+  "intro": {
+    "line1": "내 손안의 매장 관리 매니저,",
+    "word1": "COMPOSE",
+    "word2": "COPILOT"
+  },
+  "form": {
+    "title": "로그인",
+    "subtitle": "가맹점 계정으로 로그인해 주세요",
+    "idLabel": "아이디",
+    "idPlaceholder": "이메일 또는 가맹점 아이디",
+    "idError": "아이디를 입력해 주세요",
+    "pwLabel": "비밀번호",
+    "pwPlaceholder": "비밀번호 입력",
+    "pwError": "비밀번호를 입력해 주세요",
+    "autoLogin": "자동 로그인",
+    "find": "아이디 / 비밀번호 찾기",
+    "submit": "로그인",
+    "signup": "회원가입",
+    "contact": "문의하기",
+    "skip": "가입 건너뛰고 온보딩으로 넘어가기",
+    "comingSoon": "준비중이에요",
+    "welcome": "로그인했어요. 매장 정보를 연결해볼게요"
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "owner": "최윤서",
+  "intro": {
+    "eyebrow": "효율적인 자금관리법!",
+    "title": "최윤서 님을 위한 지원금 찾기",
+    "description": "매장 정보와 설문 기반으로 나에게 맞는 사업을 찾아요.",
+    "tags": [
+      "#3분 미만 간단설문",
+      "#나도 몰랐던 지원금 받기"
+    ]
+  },
+  "preInfo": [
+    {
+      "label": "업종",
+      "value": "카페 · 외식업"
+    },
+    {
+      "label": "업력",
+      "value": "9개월"
+    },
+    {
+      "label": "지역",
+      "value": "서울 강남구"
+    },
+    {
+      "label": "직원",
+      "value": "4명"
+    },
+    {
+      "label": "매출",
+      "value": "전월 대비 감소"
+    }
+  ],
+  "questions": [
+    {
+      "id": "age",
+      "group": "basic",
+      "title": "대표자 (점주) 의 나이대를 알려주세요.",
+      "desc": "만 39세 이하이면 청년고용연계자금 (최대 7천만원) 신청 조건이 생겨요.",
+      "chipLabel": "나이",
+      "options": [
+        {
+          "value": "young",
+          "label": "만 39세 이하",
+          "chip": "만39세 이하"
+        },
+        {
+          "value": "old",
+          "label": "만 40세 이상",
+          "chip": "만40세 이상"
+        }
+      ]
+    },
+    {
+      "id": "loan",
+      "group": "basic",
+      "title": "현재 사업 관련 대출이 있으신가요?",
+      "desc": "고금리 대출을 저금리로 전환하는 대환대출 (최대 5천만원) 매칭에 활용돼요.",
+      "chipLabel": "대출여부",
+      "options": [
+        {
+          "value": "yes",
+          "label": "있어요",
+          "chip": "있음"
+        },
+        {
+          "value": "no",
+          "label": "없어요",
+          "chip": "없음"
+        }
+      ]
+    },
+    {
+      "id": "credit",
+      "group": "basic",
+      "title": "최근 1년 내 대출 · 카드 납부에 어려움이 있으셨나요?",
+      "desc": "신용점수를 직접 묻지 않아요. 신용취약소상공인자금 (최대 3천만원) 해당 여부를 간접 확인해요.",
+      "chipLabel": "신용",
+      "options": [
+        {
+          "value": "yes",
+          "label": "있었어요",
+          "chip": "어려움 있음"
+        },
+        {
+          "value": "no",
+          "label": "없었어요",
+          "chip": "어려움 없음"
+        }
+      ]
+    },
+    {
+      "id": "youth",
+      "group": "extra",
+      "title": "직원 중 만 34세 이하 청년이 있나요?",
+      "desc": "대표자가 만 40세 이상이어도 청년 직원이 있으면 청년 고용연계자금 신청이 가능해요.",
+      "chipLabel": "청년직원",
+      "options": [
+        {
+          "value": "yes",
+          "label": "있어요",
+          "chip": "있음"
+        },
+        {
+          "value": "no",
+          "label": "없어요",
+          "chip": "없음"
+        }
+      ]
+    },
+    {
+      "id": "gender",
+      "group": "extra",
+      "title": "대표자 성별을 알려주세요.",
+      "desc": "여성 가장 대상 별도 지원자금이 있어요",
+      "chipLabel": "대표자 성별",
+      "options": [
+        {
+          "value": "male",
+          "label": "남성",
+          "chip": "남성"
+        },
+        {
+          "value": "female",
+          "label": "여성",
+          "chip": "여성"
+        }
+      ]
+    },
+    {
+      "id": "closed",
+      "group": "extra",
+      "title": "이전에 폐업 경험이 있으신가요?",
+      "desc": "재창업자는 재도전 특별자금 신청이 가능해요.",
+      "chipLabel": "폐업경험",
+      "options": [
+        {
+          "value": "yes",
+          "label": "있어요",
+          "chip": "있음"
+        },
+        {
+          "value": "no",
+          "label": "없어요",
+          "chip": "없음"
+        }
+      ]
+    }
+  ],
+  "loadingSteps": [
+    "설문 분석중",
+    "지원사업 매칭중",
+    "결과 정리중"
+  ],
+  "filters": [
+    {
+      "value": "all",
+      "label": "전체"
+    },
+    {
+      "value": "instant",
+      "label": "즉시 신청가능"
+    },
+    {
+      "value": "closing",
+      "label": "마감임박"
+    }
+  ],
+  "summaryLinks": [
+    "direct",
+    "stability",
+    "guarantee"
+  ],
+  "programs": [
+    {
+      "id": "direct",
+      "name": "소공인직접대출",
+      "linkLabel": "소공인직접 대출",
+      "org": "소상공인시장진흥공단",
+      "logo": "semas",
+      "limit": "최대 1억원",
+      "rate": "연 2.0%",
+      "term": "5년",
+      "deadlineDays": 15,
+      "instant": true,
+      "reason": "창업 1년 미만 외식업 조건에 해당해요.",
+      "url": "https://www.semas.or.kr"
+    },
+    {
+      "id": "stability",
+      "name": "경영안정자금",
+      "linkLabel": "경영안정자금",
+      "org": "소상공인시장진흥공단",
+      "logo": "semas",
+      "limit": "최대 3천만원",
+      "rate": "연 2.5%",
+      "term": "7년",
+      "deadlineDays": null,
+      "instant": true,
+      "reason": "매출감소 추세 → 경영 안정 목적 해당해요.",
+      "url": "https://www.semas.or.kr"
+    },
+    {
+      "id": "guarantee",
+      "name": "신용보증부 대출",
+      "linkLabel": "신용보증부 대출",
+      "org": "신용보증기금",
+      "logo": "kodit",
+      "limit": "최대 5천만원",
+      "rate": "연 3.5%",
+      "term": "5년",
+      "deadlineDays": 15,
+      "instant": false,
+      "reason": "개인 신용 보완 가능, 초보 창업자를 우대해요.",
+      "url": "https://www.kodit.co.kr"
+    },
+    {
+      "id": "youth",
+      "name": "청년고용연계자금",
+      "linkLabel": "청년고용연계자금",
+      "org": "소상공인시장진흥공단",
+      "logo": "semas",
+      "limit": "최대 7천만원",
+      "rate": "연 2.3%",
+      "term": "5년",
+      "deadlineDays": 18,
+      "instant": false,
+      "reason": "청년대표, 청년직원 고용 조건에 모두 해당해요.",
+      "url": "https://www.semas.or.kr"
+    }
+  ],
+  "consult": {
+    "title": "어떤 방법으로 상담받을까요?",
+    "channels": [
+      {
+        "id": "kakao",
+        "label": "카카오톡 상담",
+        "desc": "상담사가 알림톡으로 먼저 연락드려요",
+        "aside": "010-****-4696",
+        "toast": "카카오톡 상담을 요청했어요. 영업일 1일 안에 연락드려요"
+      },
+      {
+        "id": "phone",
+        "label": "전화 상담",
+        "desc": "원하시는 시간에 전화드려요",
+        "aside": "평일 09:00~18:00",
+        "toast": "전화 상담을 요청했어요. 영업일 1일 안에 전화드려요"
+      }
+    ]
+  },
+  "infoForm": {
+    "description": "POS · 온보딩에서 자동으로 가져온 정보예요. 실제와 다르면 고쳐주세요. 지원금 매칭에 바로 반영돼요.",
+    "initial": {
+      "industry": "카페 · 외식업",
+      "months": 9,
+      "city": "서울",
+      "district": "강남구",
+      "staff": 4,
+      "trend": "전월 대비 감소"
+    },
+    "industries": [
+      "카페 · 외식업",
+      "베이커리 · 디저트",
+      "테이크아웃 전문",
+      "기타 외식업"
+    ],
+    "regions": {
+      "서울": [
+        "강남구",
+        "서초구",
+        "송파구",
+        "마포구",
+        "종로구",
+        "성동구"
+      ],
+      "경기": [
+        "성남시",
+        "수원시",
+        "고양시",
+        "용인시"
+      ],
+      "인천": [
+        "연수구",
+        "남동구",
+        "부평구"
+      ],
+      "부산": [
+        "해운대구",
+        "부산진구",
+        "수영구"
+      ]
+    },
+    "trends": [
+      "전월 대비 증가",
+      "전월과 비슷",
+      "전월 대비 감소"
+    ]
+  }
+}

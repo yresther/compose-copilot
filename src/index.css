@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    min-width: 1440px;
+  }
+  body {
+    @apply bg-gray-200 font-sans text-gray-900 antialiased;
+    line-height: 1.4;
+    letter-spacing: -0.03em;
+  }
+  button {
+    letter-spacing: inherit;
+  }
+}
+
+
+/* AI 코파일럿 대화창 — 오른쪽에서 밀려 들어옴 */
+@keyframes ai-panel-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.animate-ai-panel-in {
+  animation: ai-panel-in 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* POS 연결 로딩 — 일러스트 가운데 노란 점 3개가 차례로 튀어 오름 */
+@keyframes pos-dot {
+  0%,
+  60%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.55;
+  }
+  30% {
+    transform: translate(-50%, calc(-50% - 4px)) scale(1.2);
+    opacity: 1;
+  }
+}
+.animate-pos-dot {
+  animation: pos-dot 1.1s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-pos-dot {
+    animation: none;
+  }
+}
+
+/* 대시보드 실시간 그래프 끝 점 — 녹화 표시처럼 천천히 깜빡임 */
+@keyframes live-dot {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+.animate-live-dot {
+  animation: live-dot 1.8s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-live-dot {
+    animation: none;
+  }
+}
+
+/* 로그인 화면 — COMPOSE · COPILOT 사이 원형 로고가 천천히 계속 회전 */
+@keyframes logo-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-logo-spin {
+  animation: logo-spin 14s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-logo-spin {
+    animation: none;
+  }
+}
+
+/* 브라우저 자동완성(아이디 저장 등)으로 채워진 입력칸이 보라·파란 배경으로 바뀌지 않도록 — 일반 입력칸과 같은 회색, 포커스 시 흰색 */
+input:-webkit-autofill,
+input:-webkit-autofill:hover {
+  -webkit-text-fill-color: #212121;
+  -webkit-box-shadow: 0 0 0 1000px #f5f5f5 inset;
+  caret-color: #212121;
+}
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
+
+/* 로그인 오른쪽 패널 — 회원가입 · 찾기 · 문의하기로 바뀔 때 살짝 올라오며 나타남 */
+@keyframes auth-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-auth-in {
+  animation: auth-in 360ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-auth-in {
+    animation: none;
+  }
+}
