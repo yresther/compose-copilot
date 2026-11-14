@@ -35,6 +35,9 @@ export function useActions() {
   return ctx
 }
 
+/** 완료하면 '해야 할 일'에서 빠져 '완료한 항목' 탭(오늘의 할 일 페이지)으로 옮겨진다는 안내 */
+export const doneToast = (n: number) => `${n > 1 ? `${n}개 항목을` : '할 일을'} 완료했어요. 완료한 항목에서 볼 수 있어요.`
+
 const nowHHMM = () => formatTime(kstNow(), false)
 
 /** 완료된 액션은 홈 영업종료 캡처의 완료 스타일로 (회색 카드 + 'HH:MM 완료' 배지) */

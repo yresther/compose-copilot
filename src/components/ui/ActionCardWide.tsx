@@ -14,12 +14,24 @@ type Props = {
   onCta?: (data: ActionCardData) => void
   onComplete: (data: ActionCardData) => void
   onUndo: (data: ActionCardData) => void
+  /** 완료한 항목 탭: 완료 취소 아래에 삭제 버튼 */
+  onDelete?: (data: ActionCardData) => void
   /** 초안 전체보기 (리뷰 카드) */
   onViewDraft?: (data: ActionCardData) => void
 }
 
 /** 액션 제안 페이지의 가로형 카드 — 왼쪽 요약 | 오른쪽 근거·초안 + 우측 완료하기 칸 */
-export default function ActionCardWide({ data, checked, onCheckedChange, onOpen, onCta, onComplete, onUndo, onViewDraft }: Props) {
+export default function ActionCardWide({
+  data,
+  checked,
+  onCheckedChange,
+  onOpen,
+  onCta,
+  onComplete,
+  onUndo,
+  onDelete,
+  onViewDraft,
+}: Props) {
   const box = data.done ? 'bg-gray-200' : 'bg-gray-100'
   // 왼쪽 표: 발주는 재고 행, 리뷰는 플랫폼별 건수
   const leftRows = data.rows ?? data.platforms?.map((p) => ({ label: p.name, value: p.value, done: p.done })) ?? []
@@ -109,13 +121,13 @@ export default function ActionCardWide({ data, checked, onCheckedChange, onOpen,
         </div>
       </article>
 
-      <SideButton data={data} onComplete={onComplete} onUndo={onUndo} />
+      <SideButton data={data} onComplete={onComplete} onUndo={onUndo} onDelete={onDelete} />
     </div>
   )
 }
 
 /** 카드 오른쪽 세로 '완료하기' 칸 — 완료 후 모습은 config/demo.ts 설정을 따른다 */
-function SideButton({ data, onComplete, onUndo }: Pick<Props, 'data' | 'onComplete' | 'onUndo'>) {
+function SideButton({ data, onComplete, onUndo, onDelete }: Pick<Props, 'data' | 'onComplete' | 'onUndo' | 'onDelete'>) {
   const base = 'h-[235px] w-[108px] shrink-0 rounded-card border border-gray-300 text-[16px] font-medium transition-colors'
 
   if (!data.done) {
@@ -127,6 +139,24 @@ function SideButton({ data, onComplete, onUndo }: Pick<Props, 'data' | 'onComple
       >
         완료하기
       </button>
+    )
+  }
+  // 완료한 항목 탭 — 같은 칸을 위아래로 나눠 완료 취소 · 삭제
+  if (onDelete) {
+    const half = 'flex-1 rounded-card border border-gray-300 text-[15px] font-medium transition-colors'
+    return (
+      <div className="flex h-[235px] w-[108px] shrink-0 flex-col gap-2">
+        <button
+          type="button"
+          onClick={() => onUndo(data)}
+          className={`${half} bg-white text-gray-600 hover:bg-gray-100 hover:text-gray-800`}
+        >
+          완료 취소
+        </button>
+        <button type="button" onClick={() => onDelete(data)} className={`${half} bg-white text-danger hover:bg-danger-bg`}>
+          삭제
+        </button>
+      </div>
     )
   }
   if (COMPLETED_SIDE_BUTTON === 'hide') return <span className="w-[108px] shrink-0" aria-hidden />

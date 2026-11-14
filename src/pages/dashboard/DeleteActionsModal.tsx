@@ -9,8 +9,8 @@ export default function DeleteActionsModal({ open, items, onClose, onConfirm }: 
   return (
     <Modal open={open} onClose={onClose} width={520}>
       <div className="px-12 pb-10 pt-[46px]">
-        <h2 className="text-subhead text-gray-900">선택한 할 일을 삭제할까요?</h2>
-        <p className="mt-2 text-[16px] text-gray-600">삭제하면 오늘의 할 일 목록에서 사라져요.</p>
+        <h2 className="text-subhead text-gray-900">{items.length > 1 ? '선택한 할 일을 삭제할까요?' : '이 할 일을 삭제할까요?'}</h2>
+        <p className="mt-2 text-[16px] text-gray-600">삭제하면 목록에서 사라지고 되돌릴 수 없어요.</p>
 
         <ul className="mt-6 divide-y divide-gray-200 rounded-card border border-gray-300">
           {items.map((a) => (

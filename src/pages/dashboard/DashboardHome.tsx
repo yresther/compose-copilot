@@ -1,4 +1,4 @@
-import { Bell, RotateCw } from 'lucide-react'
+import { Bell, ChevronRight, RotateCw } from 'lucide-react'
 import { useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import logo from '../../assets/logo.svg'
@@ -17,7 +17,7 @@ import NotificationPopover from './NotificationPopover'
 import DemoModeToggle, { type DashboardMode } from './DemoModeToggle'
 import DeleteActionsModal from './DeleteActionsModal'
 import ReportSendModal from './ReportSendModal'
-import { ACTIONS, useActions } from '../../state/ActionsContext'
+import { ACTIONS, doneToast, useActions } from '../../state/ActionsContext'
 import { useNotifications } from '../../state/NotificationsContext'
 import { useSidebar } from '../../components/layout/AppLayout'
 import { useLiveActionList } from '../../state/useLiveActions'
@@ -62,7 +62,9 @@ export default function DashboardHome() {
   // 영업중: 공유 액션 + 완료 상태 / 영업종료: 마감 캡처 기준으로 고정된 처리 현황
   const actions: ActionCardData[] = closing
     ? dashboard.modes.closing.actionOverrides.map((o) => ({ ...ACTIONS.find((a) => a.id === o.id)!, ...o }) as ActionCardData)
-    : liveActions
+    : liveActions.filter((a) => !a.done)
+  // 완료한 할 일은 홈에서 빠지고 오늘의 할 일 페이지의 '완료한 항목' 탭으로
+  const doneCount = liveActions.filter((a) => a.done).length
   const selected = [...checked].filter((id) => !completed[id])
 
   const changeMode = (m: DashboardMode) => {
@@ -72,7 +74,7 @@ export default function DashboardHome() {
 
   const completeChecked = () => {
     complete(selected)
-    toast.show('액션을 완료했어요.')
+    toast.show(doneToast(selected.length))
   }
 
   const deleteChecked = () => {
@@ -167,8 +169,18 @@ export default function DashboardHome() {
         <div className={`${closing ? 'mt-[35px]' : 'mt-[26px]'} flex items-baseline gap-3.5`}>
           <h2 className="text-pagetitle text-gray-900">{data.actionsTitle}</h2>
           <span className="font-num text-[14px] text-gray-500">{data.actionsSub}</span>
+          {!closing && doneCount > 0 && (
+            <button
+              type="button"
+              onClick={() => navigate('/dashboard/action?tab=done')}
+              className="ml-auto flex items-center gap-0.5 text-[14px] text-gray-600 hover:text-gray-900"
+            >
+              {dashboard.doneLink} <span className="font-num font-semibold text-gray-900">{doneCount}</span>개
+              <ChevronRight size={16} />
+            </button>
+          )}
         </div>
-        {actions.length === 0 && <EmptyActions className="mt-[15px]" />}
+        {actions.length === 0 && <EmptyActions variant={doneCount > 0 ? 'allDone' : 'none'} className="mt-[15px]" />}
         <div
           className={`${closing ? 'mt-[26px]' : 'mt-[15px]'} grid grid-cols-3 items-start gap-4 ${actions.length === 0 ? 'hidden' : ''}`}
         >
